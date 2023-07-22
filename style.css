@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Typography */
+  /* body content */
+  body {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  
+  /* headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Rampart One', cursive;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  /* Center text in paragraphs that have direct children links (<a>) */
+  p:has(> a) {
+    text-align: center;
+  }
+  
+  /* Layout & Appearance */
+  
+  /* Header */
+  header {
+    height: 15vw;
+    background-color: #FF8360;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Main content wrapper */
+  .main-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+    border: 2px solid #999;
+    padding: 1em;
+  }
+  
+  /* Styling for sections inside the main content */
+  /* Styling for paragraphs immediately after a <div> in a section */
+  main section > div + p {
+    background-color: #3CDBD3;
+    padding: 1em;
+  }
+  
+  /* Styling for sections in the main content */
+  main section {
+    padding-block-start: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Styling for paragraphs inside the second section */
+  main section:nth-of-type(2) p {
+    background-color: #E8E288;
+    padding: 1em;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: row-reverse; /* opposite from by default */
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styling for paragraphs and links in the footer */
+  footer p,
+  footer a {
+    background-color: #7DCE82;
+    color: #fff;
+    padding: 2em;
+    border: 2px solid #fff;
+  }
+  
+  /* Styling for paragraph in the footer */
+  footer p {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  /* Styling for links in the footer */
+  footer a {
+    background-color: #FF8360;
+  }
+  
+  /* Hover effect for links in the footer */
+  footer a:hover {
+    background-color: #9C528B;
+  }
+  
